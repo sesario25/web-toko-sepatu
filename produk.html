@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk - Toko Sepatu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .product-list {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .product-list h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .product-card {
+            background: #f8f8f8;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .product-card p {
+            color: #ff4500;
+            font-weight: bold;
+            margin: 0.3rem 0;
+        }
+
+        .product-card button {
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Toko Sepatu</div>
+    </header>
+
+    <section class="product-list">
+        <h2>Katalog Produk Kami</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/shoe1.jpg" alt="Sepatu Kasual">
+                <h3>Sepatu Kasual</h3>
+                <p>Rp 250.000</p>
+                <button>Detail Produk</button>
+            </div>
+            <div class="product-card">
+                <img src="images/shoe2.jpg" alt="Sepatu Olahraga">
+                <h3>Sepatu Olahraga</h3>
+                <p>Rp 300.000</p>
+                <button>Detail Produk</button>
+            </div>
+            <div class="product-card">
+                <img src="images/shoe3.jpg" alt="Sepatu Formal">
+                <h3>Sepatu Formal</h3>
+                <p>Rp 350.000</p>
+                <button>Detail Produk</button>
+            </div>
+            <div class="product-card">
+                <img src="images/shoe4.jpg" alt="Sepatu Sneakers">
+                <h3>Sepatu Sneakers</h3>
+                <p>Rp 400.000</p>
+                <button>Detail Produk</button>
+            </div>
+            <div class="product-card">
+                <img src="images/shoe5.jpg" alt="Sepatu Boots">
+                <h3>Sepatu Boots</h3>
+                <p>Rp 450.000</p>
+                <button>Detail Produk</button>
+            </div>
+            <!-- Tambahkan lebih banyak produk di sini -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Toko Sepatu. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
